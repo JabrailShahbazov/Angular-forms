@@ -1,4 +1,4 @@
-import {Component,ViewChild} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {NgForm} from '@angular/forms';
 
 @Component({
@@ -8,6 +8,8 @@ import {NgForm} from '@angular/forms';
 })
 export class AppComponent {
   @ViewChild('f') signupName: NgForm;
+  defaultQuestion = 'pet';
+  answer = '';
 
   suggestUserName() {
     const suggestedName = 'Superuser';
